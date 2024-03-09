@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        input{
+            background-color: black;
+            color:white;
+            border: 1px solid white;
+        }
+
+        input::placeholder{
+            color:white;
+        }
+
+        textarea{
+            background-color: black;
+            color:white;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body style=background-color:rgb(137,43,226);color:white;margin:10px;>
+    <form action="" >
+        <label for="fname">FIRST NAME</label>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        <input type="text" id="fname" name="fname" maxlength="30" >
+        <label for="fname">(max 30 characters a-z and A-Z)</label>
+        
+        <br><br>
+
+        <label for="lname">LAST NAME</label>
+        &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        <input type="text" id="lname" maxlength="30">
+        <label for="lname">(max 30 characters a-z and A-Z)</label>
+
+        <br><br>
+
+        <label for="DOB">DATE OF BIRTH</label>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        <input type="number" id="DOB" placeholder="Day" max="31" style="width:40px;border:solid 1px white;border-radius:5px;">
+        <input type="number" id="DOB" placeholder="Month" max="12" style="width:60px;border:solid 1px white;border-radius:5px;">
+        <input type="number" id="DOB" placeholder="Year" max="100" style="width:50px;border:solid 1px white;border-radius:5px;">
+
+        <br><br>
+        
+        <label for="EI">EMAIL ID</label>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp 
+        <input type="email" id="EI">
+
+        <br><br>
+
+        <label for="MN">MOBILE NUMBER</label>
+        &nbsp &nbsp &nbsp  
+        <input type="number" id="MN" style="background-color:black;color: white;">
+        <label for="MN">10 digit number</label>
+
+        <br><br>
+
+        <label for="GENDER">GENDER</label>
+        &nbsp &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp    
+        <label for="Male">Male</label>
+        <input type="Radio" id="Male" name="Gender" >
+
+        &nbsp
+
+        <label for="Female">Female</label>
+        <input type="Radio" id="Female" name="Gender">
+
+        <br><br>
+
+        <label for="A" style="vertical-align:top;">ADDRESS</label>
+        &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+        <textarea name="" id="A" cols="30" rows="4"></textarea>
+
+        <br><br>
+
+        <label for="C">CITY</label>
+        &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp &nbsp  &nbsp  &nbsp   &nbsp  &nbsp  &nbsp 
+        <input type="text" name="C" id="C" maxlength="30">
+        <label for="C">(max 30 characters a-z and A-Z)</label>
+
+        <br><br>
+
+        <label for="PC">PIN CODE</label> &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+        <input type="password" name="" id="PC" required maxlength="6">
+        <label for="PC">(6 digit number)</label>
+
+        <br><br>
+
+        <label for="S">STATE</label>
+        &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+        <input type="text" name="" id="S" maxlength="30">
+        <label for="S">(max 30 characters a-z and A-Z)</label>
+
+        <br><br>
+
+        <label for="COUNTRY">COUNTRY</label>
+        &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+        <input type="text" name="COUNTRY" id="COUNTRY" placeholder="India">
+
+        <br><br>
+
+        <label for="">HOBBIES</label>
+        &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+        <label for="Drawing">Drawing</label>
+        <input type="checkbox" name="hobbies" id="Drawing">
+        
+        <label for="Singing">Singing</label>
+        <input type="checkbox" id="Singing">
+
+        <label for="Dancing">Dancing</label>
+        <input type="checkbox" id="Dancing">
+
+        <label for="Sketching">Sketching</label>
+        <input type="checkbox" id="Sketching">
+
+        <br>
+
+        &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp   &nbsp  &nbsp  &nbsp &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+        <label for="Others">Others</label>
+        <input type="checkbox" id="Others">
+        <input type="text">
+
+        <br><br>
+        
+        <b>
+        <label for="">QUALIFICATION</label>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        <label for="">Sl.No.Examination</label>
+         &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp  &nbsp  
+        <label for="Board">Board</label>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+        <label for="Percentage">Percentage</label>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp  &nbsp  &nbsp 
+        <label for="Year of Passing">Year of Passing</label>
+        <br>
+    </b>
+        &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp
+
+        <label for="Board">
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp     &nbsp  &nbsp  &nbsp  &nbsp
+            1  
+            &nbsp    &nbsp  &nbsp &nbsp    
+            Class X
+            &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+            <input type="text" name="Board" id="Board">
+            <input type="text">
+            <input type="text">
+        </label>
+
+        <br>
+
+        &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp
+
+        <label for="Percentage">
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp     &nbsp  &nbsp  &nbsp  &nbsp
+            2
+            &nbsp    &nbsp  &nbsp &nbsp    
+            Class XII
+            &nbsp &nbsp  &nbsp  &nbsp
+            <input type="text" name="Percentage" id="Percentage" >
+            <input type="text">
+            <input type="text">
+        </label>
+
+        <br>
+
+        &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp
+
+        <label for="Year of Passing">
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp     &nbsp  &nbsp  &nbsp  &nbsp
+            3  
+            &nbsp    &nbsp  &nbsp &nbsp    
+            Graduation
+            &nbsp  &nbsp
+            <input type="text" name="Year of Passing" id="Year of Passing" >
+            <input type="text">
+            <input type="text">
+        </label>
+
+        <br>
+
+        &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp
+
+        <label for="Masters">
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp     &nbsp  &nbsp  &nbsp  &nbsp
+            4
+            &nbsp    &nbsp  &nbsp &nbsp    
+            Masters
+            &nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+            <input type="text" name="Masters" id="Masters" >
+            <input type="text">
+            <input type="text">
+        </label>
+
+        <br><br>
+
+        <label for="C">COURSES
+            &nbsp &nbsp &nbsp &nbsp  &nbsp  &nbsp  &nbsp  &nbsp 
+            <label for="BCA" name="COURSES" >BCA</label>
+            <input type="radio" id="BCA" name="COURSES">
+            <label for="B.Com">B.Com</label>
+            <input type="radio" name="COURSES" id="B.Com">
+            <label for="B.Sc">B.Sc</label>
+            <input type="radio" name="COURSES" id="B.Sc">
+            <label for="B.A">B.A</label>
+            <input type="radio" name="COURSES" id="B.A">
+            <br>
+            APPLIED FOR
+        </label>
+
+        <br><br>
+
+        <center>
+        <input type="Submit" style="height:25px;">
+        <input type="Reset" style="height:25px;">
+        </center>
+
+    </form>
+</body>
+</html>
